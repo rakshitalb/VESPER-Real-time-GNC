@@ -1,0 +1,83 @@
+VESPER SWE-01 — Week 11 WCET / Jitter Measurement Results
+
+Measurement Date: 30 September 2026
+
+1. RTOS PERIOD / JITTER MEASUREMENT
+
+Measurement artifact:
+gnc_week11_final_measurement.elf
+
+FreeRTOS configuration:
+CPU frequency / Renode performance: 125 MHz / 125 MIPS
+FreeRTOS tick rate: 1000 Hz
+Tick resolution: 1 ms
+GNC task nominal period: 10 ms
+
+Number of completed measurements: 100
+
+Minimum observed GNC period: 10 ticks = 10 ms
+Maximum observed GNC period: 10 ticks = 10 ms
+Peak-to-peak observed period jitter:
+10 ms - 10 ms = 0 ms
+
+Therefore:
+Observed GNC task period jitter = 0 ms at 1 ms tick resolution.
+
+2. CONTROLLER EXECUTION-TIME BENCHMARK
+
+Measurement artifact:
+gnc_week7_timing.elf
+
+Number of controller executions: 300
+
+Minimum observed execution time: 5.968 us
+Maximum observed execution time: 7.288 us
+Observed execution-time spread: 1.320 us
+
+Important qualification:
+7.288 us is the maximum observed execution time in the measurement campaign.
+It is not claimed as a formally proven mathematical WCET.
+
+3. DEADLINE MARGIN
+
+GNC task deadline / period: 10 ms
+Maximum observed controller execution time: 7.288 us
+Maximum observed execution time in milliseconds: 0.007288 ms
+
+Deadline margin:
+10 ms - 0.007288 ms = 9.992712 ms
+
+Therefore:
+Measured deadline margin based on maximum observed execution time
+= 9.992712 ms.
+
+4. RTOS TICK-RESOLUTION EXECUTION MEASUREMENT
+
+The Week 11 RTOS measurement recorded:
+
+Minimum execution time in FreeRTOS ticks: 0 ticks
+Maximum execution time in FreeRTOS ticks: 0 ticks
+Execution spread in FreeRTOS ticks: 0 ticks
+
+Interpretation:
+The controller executes within a single 1 ms FreeRTOS tick. Therefore,
+this measurement cannot resolve the controller's microsecond-level
+execution-time variation. The dedicated microsecond benchmark is used
+for controller execution-time results.
+
+5. FINAL INTERPRETATION
+
+The integrated GNC task maintained the configured 10 ms activation period
+for 100 consecutive measurements, with 0 ms peak-to-peak period jitter
+at the 1 ms FreeRTOS tick resolution.
+
+The dedicated controller benchmark measured a maximum observed execution
+time of 7.288 us and a minimum observed execution time of 5.968 us,
+giving an observed execution-time spread of 1.320 us.
+
+The corresponding deadline margin, using the maximum observed execution
+time, is 9.992712 ms.
+
+The results demonstrate substantial measured timing margin for the
+10 ms GNC task period. However, the 7.288 us result is reported as a
+maximum observed execution time rather than a formally proven WCET.

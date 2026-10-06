@@ -1,0 +1,8 @@
+using sysbus
+
+mach create "GNC_Week11_Final_Measurement"
+machine LoadPlatformDescription @platforms/boards/stm32f4_discovery-kit.repl
+
+cpu PerformanceInMips 125
+
+sysbus LoadELF @C:\Users\DELL\Week4_GNC_Renode\c_port\gnc_week11_final_measurement.elf

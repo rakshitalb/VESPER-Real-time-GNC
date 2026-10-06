@@ -1,0 +1,119 @@
+Reset_Handler 46
+Reset_Handler;main (entry) 1
+Reset_Handler;main (entry);check_functional_equivalence (entry) 3
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 46
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dmul (entry) 27
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 9
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dmul (entry) 54
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 6
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dsub (entry) 78
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 15
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry) 8
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry) 9
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 10
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 14
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dmul (entry) 27
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 9
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dmul (entry) 54
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 6
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dsub (entry) 70
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 15
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry) 8
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry) 9
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 15
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dmul (entry) 53
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 6
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dmul (entry) 54
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 6
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);__aeabi_dsub (entry) 78
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 15
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry) 8
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry) 9
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry);__aeabi_cdrcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmpgt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry);limit_torque (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);pd_controller (entry) 15
+Reset_Handler;main (entry);check_functional_equivalence (entry) 5
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dsub (entry) 24
+Reset_Handler;main (entry);check_functional_equivalence (entry) 5
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dsub (entry) 24
+Reset_Handler;main (entry);check_functional_equivalence (entry) 5
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dsub (entry) 70
+Reset_Handler;main (entry);check_functional_equivalence (entry) 12
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dsub (entry) 74
+Reset_Handler;main (entry);check_functional_equivalence (entry) 12
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dsub (entry) 74
+Reset_Handler;main (entry);check_functional_equivalence (entry) 12
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry) 7
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dsub (entry) 70
+Reset_Handler;main (entry);check_functional_equivalence (entry) 12
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 2
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry);__cmpdf2 (entry) 19
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry);__aeabi_cdcmple (entry) 11
+Reset_Handler;main (entry);check_functional_equivalence (entry);__aeabi_dcmplt (entry) 4
+Reset_Handler;main (entry);check_functional_equivalence (entry) 7
+Reset_Handler;main (entry) 5
+Reset_Handler;main (entry);benchmark_start (entry) 4
+Reset_Handler;main (entry) 6
+Reset_Handler;main (entry);benchmark_workload (entry) 180000013
+Reset_Handler;main (entry) 6
+Reset_Handler;main (entry);benchmark_end (entry) 4

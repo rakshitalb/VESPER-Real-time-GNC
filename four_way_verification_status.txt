@@ -1,0 +1,26 @@
+﻿VESPER GNC - FOUR-WAY VERIFICATION STATUS
+
+1. ANALYTICAL LIMITS
+Evidence: analytical_limits_results.txt
+Status: VERIFIED
+Basis: controller gains, actuator torque saturation, momentum limit, and analytical torque calculation.
+
+2. PUBLISHED DATA
+Evidence: published_reference_check\published_reference_evidence.txt; figure_5_4.png; figure_5_4_mean_digitized.csv
+Status: PARTIAL / QUALIFIED
+Basis: published 0.35 arcmin benchmark identified; Figure 5.4 digitized to 735 points; digitized mean = 0.3911 arcmin; absolute difference = 0.0411 arcmin; relative difference = 11.74%.
+Limitation: original numerical target-tracking/STK time series were not available, so full numerical reproduction is NOT claimed.
+
+3. CROSS-CODE CHECK
+Evidence: c_port\week9_cross_code_results.txt
+Status: VERIFIED
+Basis: Python/reference and C/Renode outputs matched exactly on all three torque axes: [-0.010000, +0.007000, -0.003300] N.m.
+
+4. CONVERGENCE STUDY
+Evidence: convergence_results.txt
+Status: VERIFIED WITH QUALIFICATION
+Basis: dt = 1, 0.5, 0.25, 0.125 s produced unchanged final attitude at reported output precision.
+Limitation: this does not prove internal adaptive RK45 truncation convergence.
+
+OVERALL
+Three verification paths are directly verified. Published-data verification is explicitly qualified because the original published time series are unavailable. No unsupported full reproduction claim is made.

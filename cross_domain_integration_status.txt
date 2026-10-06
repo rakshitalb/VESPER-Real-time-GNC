@@ -1,0 +1,12 @@
+WEEK 9 - CROSS-DOMAIN INTEGRATION STATUS
+Integration domains: Aerospace GNC reference/control model -> Embedded Software / RTOS implementation
+Exchanged artifact: PD control law and torque output interface
+GNC-side artifact: control.py PD controller and reference torque behavior
+Embedded-side artifact: control.c pd_controller plus week9_interface.h GNC_Telemetry interface
+Change caused by exchange: the Python GNC control law was ported into C and integrated into the RTOS task; the resulting torque/status/timestamp were published through GNC_Telemetry and consumed by Communications_Task.
+Numerical verification: cross-code test matched all three torque axes exactly: [-0.010000, +0.007000, -0.003300] N.m.
+Runtime verification: Communications_Task consumed non-zero GNC timestamps and valid status from the telemetry interface.
+Evidence: c_port\week9_cross_code_results.txt; c_port\week9_runtime_evidence.txt; c_port\week9_interface.h; c_port\control.c; control.py
+Reproducibility: week9_integration_repro.resc loads the integration ELF using a relative path; original week9_integration.resc was not modified.
+Qualification: the integration demonstrates the Aerospace-GNC-to-Embedded-SW exchange using the project artifacts; no separate external partner-domain repository was involved.
+Status: VERIFIED WITH QUALIFICATION

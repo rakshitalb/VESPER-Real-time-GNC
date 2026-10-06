@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.elf
+*.o
+*.bin
+*.bin.gz
+*.gz
+*.dump
+decoded_*.txt
+FreeRTOS-Kernel/
+published_reference_check/franquiz_2015_6U_ADCS.pdf
+c_port/findstr
+c_port/python
+c_port/rtos_long_trace.bin.gz.1
+benchmark_trace.txt
+c_port/gnc_trace.txt
+c_port/profile.txt

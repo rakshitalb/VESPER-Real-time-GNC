@@ -1,0 +1,58 @@
+VESPER W3 — Satellite Attitude Dynamics Simulation
+Ref: VESPER-W3-SAT-SIM-001
+
+[SIM] Running 'Free Drift (No Control)' | controller=zero | disturbances=True | duration=600s
+
+============================================================
+  Scenario : Free Drift (No Control)
+  Duration : 600.0 s  |  Steps : 601
+  Final |ω|: 0.0436 deg/s
+  Final att: roll=-31.479°  pitch=-0.000°  yaw=0.000°
+  Max Euler error: 31.479°
+  Max wheel saturation: 0.0%
+============================================================
+
+[SIM] Running 'Rest-to-Rest 30° (PD)' | controller=pd | disturbances=True | duration=200s
+
+============================================================
+  Scenario : Rest-to-Rest 30° (PD)
+  Duration : 200.0 s  |  Steps : 401
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=-0.000°  pitch=-0.000°  yaw=0.000°
+  Max Euler error: 30.000°
+  Max wheel saturation: 1.8%
+============================================================
+
+[SIM] Running 'Rest-to-Rest 30° (LQR)' | controller=lqr | disturbances=True | duration=200s
+
+============================================================
+  Scenario : Rest-to-Rest 30° (LQR)
+  Duration : 200.0 s  |  Steps : 401
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=-0.000°  pitch=-0.000°  yaw=0.000°
+  Max Euler error: 30.000°
+  Max wheel saturation: 14.3%
+============================================================
+
+[SIM] Running 'Yaw Slew 45° (PD)' | controller=pd | disturbances=True | duration=300s
+
+============================================================
+  Scenario : Yaw Slew 45° (PD)
+  Duration : 300.0 s  |  Steps : 601
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=0.000°  pitch=-0.000°  yaw=-45.000°
+  Max Euler error: 45.000°
+  Max wheel saturation: 3.1%
+============================================================
+
+[SIM] Running 'Yaw Slew 45° (LQR)' | controller=lqr | disturbances=True | duration=300s
+
+============================================================
+  Scenario : Yaw Slew 45° (LQR)
+  Duration : 300.0 s  |  Steps : 601
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=0.000°  pitch=-0.000°  yaw=-45.000°
+  Max Euler error: 46.867°
+  Max wheel saturation: 20.0%
+============================================================
+

@@ -1,0 +1,173 @@
+VESPER W3 — Satellite Attitude Dynamics Simulation
+Ref: VESPER-W3-SAT-SIM-001
+
+[SIM] Running 'Free Drift (No Control)' | controller=zero | disturbances=True | duration=600s | dt=1.0s
+
+============================================================
+  Scenario : Free Drift (No Control)
+  Duration : 600.0 s  |  Steps : 601
+  Final |ω|: 0.0436 deg/s
+  Final att: roll=-31.479°  pitch=-0.000°  yaw=0.000°
+  Max Euler error: 31.479°
+  Max wheel saturation: 0.0%
+============================================================
+
+[SIM] Running 'Rest-to-Rest 30° (PD)' | controller=pd | disturbances=True | duration=200s | dt=0.5s
+
+============================================================
+  Scenario : Rest-to-Rest 30° (PD)
+  Duration : 200.0 s  |  Steps : 401
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=-0.000°  pitch=-0.000°  yaw=0.000°
+  Max Euler error: 30.000°
+  Max wheel saturation: 1.8%
+============================================================
+
+[SIM] Running 'Rest-to-Rest 30° (LQR)' | controller=lqr | disturbances=True | duration=200s | dt=0.5s
+
+============================================================
+  Scenario : Rest-to-Rest 30° (LQR)
+  Duration : 200.0 s  |  Steps : 401
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=-0.000°  pitch=-0.000°  yaw=0.000°
+  Max Euler error: 30.000°
+  Max wheel saturation: 14.3%
+============================================================
+
+[SIM] Running 'Yaw Slew 45° (PD)' | controller=pd | disturbances=True | duration=300s | dt=0.5s
+
+============================================================
+  Scenario : Yaw Slew 45° (PD)
+  Duration : 300.0 s  |  Steps : 601
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=0.000°  pitch=-0.000°  yaw=-45.000°
+  Max Euler error: 45.000°
+  Max wheel saturation: 3.1%
+============================================================
+
+[SIM] Running 'Yaw Slew 45° (LQR)' | controller=lqr | disturbances=True | duration=300s | dt=0.5s
+
+============================================================
+  Scenario : Yaw Slew 45° (LQR)
+  Duration : 300.0 s  |  Steps : 601
+  Final |ω|: 0.0000 deg/s
+  Final att: roll=0.000°  pitch=-0.000°  yaw=-45.000°
+  Max Euler error: 46.867°
+  Max wheel saturation: 20.0%
+============================================================
+
+
+
+======================================================================
+WEEK 8 CONVERGENCE STUDY — 30° REST-TO-REST PD
+======================================================================
+dt = 1.000 s | roll =  -0.00000052° | pitch =  -0.00000000° | yaw =   0.00000000°
+dt = 0.500 s | roll =  -0.00000052° | pitch =  -0.00000000° | yaw =   0.00000000°
+dt = 0.250 s | roll =  -0.00000052° | pitch =  -0.00000000° | yaw =   0.00000000°
+dt = 0.125 s | roll =  -0.00000052° | pitch =  -0.00000000° | yaw =   0.00000000°
+
+
+CONSECUTIVE-STEP DIFFERENCES
+----------------------------------------------------------------------
+1.000 s → 0.500 s | max final-attitude difference = 0.0000000000°
+0.500 s → 0.250 s | max final-attitude difference = 0.0000000000°
+0.250 s → 0.125 s | max final-attitude difference = 0.0000000000°
+
+Convergence study completed.
+
+
+======================================================================
+WEEK 10 ROBUSTNESS STUDY
+======================================================================
+
+
+----------------------------------------------------------------------
+WEEK 10.1 — Kp SENSITIVITY
+----------------------------------------------------------------------
+Kp=0.0040 | Kd=0.0500 | final error=0.007471° | final rate=0.000311 deg/s | max saturation=0.94%
+Kp=0.0060 | Kd=0.0500 | final error=0.000087° | final rate=0.000005 deg/s | max saturation=1.37%
+Kp=0.0080 | Kd=0.0500 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=1.77%
+Kp=0.0100 | Kd=0.0500 | final error=0.000000° | final rate=0.000000 deg/s | max saturation=2.16%
+Kp=0.0120 | Kd=0.0500 | final error=0.000000° | final rate=0.000000 deg/s | max saturation=2.55%
+
+
+----------------------------------------------------------------------
+WEEK 10.2 — Kd SENSITIVITY
+----------------------------------------------------------------------
+Kp=0.0080 | Kd=0.0250 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=2.93%
+Kp=0.0080 | Kd=0.0375 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=2.21%
+Kp=0.0080 | Kd=0.0500 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=1.77%
+Kp=0.0080 | Kd=0.0625 | final error=0.000042° | final rate=0.000002 deg/s | max saturation=1.48%
+Kp=0.0080 | Kd=0.0750 | final error=0.000486° | final rate=0.000026 deg/s | max saturation=1.26%
+
+
+----------------------------------------------------------------------
+WEEK 10.3 — Kp/Kd PARAMETER SWEEP
+----------------------------------------------------------------------
+Kp=0.0060 | Kd=0.0375 | final error=0.000000° | final rate=0.000000 deg/s | max saturation=1.72%
+Kp=0.0060 | Kd=0.0500 | final error=0.000087° | final rate=0.000005 deg/s | max saturation=1.37%
+Kp=0.0060 | Kd=0.0625 | final error=0.001429° | final rate=0.000071 deg/s | max saturation=1.13%
+Kp=0.0080 | Kd=0.0375 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=2.21%
+Kp=0.0080 | Kd=0.0500 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=1.77%
+Kp=0.0080 | Kd=0.0625 | final error=0.000042° | final rate=0.000002 deg/s | max saturation=1.48%
+Kp=0.0100 | Kd=0.0375 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=2.69%
+Kp=0.0100 | Kd=0.0500 | final error=0.000000° | final rate=0.000000 deg/s | max saturation=2.16%
+Kp=0.0100 | Kd=0.0625 | final error=0.000001° | final rate=0.000000 deg/s | max saturation=1.81%
+
+
+----------------------------------------------------------------------
+WEEK 10.4 — MONTE CARLO ROBUSTNESS STUDY
+----------------------------------------------------------------------
+Fixed random seed = 42 for reproducibility.
+Trial 01 | initial= 37.17° | Kp=0.00910 | Kd=0.04847 | final error=0.000001° | final rate=0.000001 deg/s | saturation=2.51%
+Trial 02 | initial= 39.51° | Kp=0.00879 | Kd=0.03985 | final error=0.000000° | final rate=0.000000 deg/s | saturation=3.01%
+Trial 03 | initial= 22.56° | Kp=0.00904 | Kd=0.05715 | final error=0.000001° | final rate=0.000000 deg/s | saturation=1.34%
+Trial 04 | initial= 38.54° | Kp=0.00780 | Kd=0.04677 | final error=0.000000° | final rate=0.000000 deg/s | saturation=2.34%
+Trial 05 | initial= 28.87° | Kp=0.00858 | Kd=0.05807 | final error=0.000003° | final rate=0.000000 deg/s | saturation=1.61%
+Trial 06 | initial= 21.28° | Kp=0.00691 | Kd=0.05136 | final error=0.000012° | final rate=0.000001 deg/s | saturation=1.08%
+Trial 07 | initial= 35.16° | Kp=0.00931 | Kd=0.05329 | final error=0.000001° | final rate=0.000001 deg/s | saturation=2.26%
+Trial 08 | initial= 37.86° | Kp=0.00742 | Kd=0.06177 | final error=0.000128° | final rate=0.000008 deg/s | saturation=1.74%
+Trial 09 | initial= 29.33° | Kp=0.00911 | Kd=0.04237 | final error=0.000001° | final rate=0.000001 deg/s | saturation=2.22%
+Trial 10 | initial= 33.66° | Kp=0.00618 | Kd=0.04136 | final error=0.000001° | final rate=0.000001 deg/s | saturation=1.83%
+Trial 11 | initial= 26.52° | Kp=0.00898 | Kd=0.06169 | final error=0.000005° | final rate=0.000000 deg/s | saturation=1.47%
+Trial 12 | initial= 23.79° | Kp=0.00748 | Kd=0.04924 | final error=0.000000° | final rate=0.000001 deg/s | saturation=1.35%
+Trial 13 | initial= 24.54° | Kp=0.00652 | Kd=0.04939 | final error=0.000017° | final rate=0.000001 deg/s | saturation=1.22%
+Trial 14 | initial= 36.65° | Kp=0.00868 | Kd=0.04843 | final error=0.000001° | final rate=0.000001 deg/s | saturation=2.38%
+Trial 15 | initial= 36.65° | Kp=0.00880 | Kd=0.04531 | final error=0.000001° | final rate=0.000001 deg/s | saturation=2.54%
+Trial 16 | initial= 25.77° | Kp=0.00922 | Kd=0.04719 | final error=0.000000° | final rate=0.000000 deg/s | saturation=1.81%
+Trial 17 | initial= 24.00° | Kp=0.00873 | Kd=0.04099 | final error=0.000000° | final rate=0.000000 deg/s | saturation=1.80%
+Trial 18 | initial= 33.30° | Kp=0.00603 | Kd=0.05717 | final error=0.000543° | final rate=0.000029 deg/s | saturation=1.36%
+Trial 19 | initial= 29.18° | Kp=0.00882 | Kd=0.05702 | final error=0.000002° | final rate=0.000000 deg/s | saturation=1.69%
+Trial 20 | initial= 22.29° | Kp=0.00827 | Kd=0.04099 | final error=0.000000° | final rate=0.000000 deg/s | saturation=1.59%
+
+
+MONTE CARLO STATISTICS
+----------------------------------------------------------------------
+Trials                 : 20
+Final error mean       : 0.000036°
+Final error maximum    : 0.000543°
+Final rate mean        : 0.000002 deg/s
+Final rate maximum     : 0.000029 deg/s
+Maximum wheel saturation: 3.01%
+
+
+----------------------------------------------------------------------
+WEEK 10.5 — EDGE-CASE TESTS
+----------------------------------------------------------------------
+Zero attitude error       | initial=  0.00° | final error=0.000000° | final rate=0.000000 deg/s | saturation=0.00%
+Small attitude error      | initial=  0.10° | final error=0.000002° | final rate=0.000002 deg/s | saturation=0.01%
+Large attitude error      | initial= 90.00° | final error=0.000002° | final rate=0.000000 deg/s | saturation=4.97%
+
+
+======================================================================
+WEEK 10 ROBUSTNESS SUMMARY
+======================================================================
+Completed analyses:
+1. Existing Week 8 output-timestep convergence study
+2. Kp sensitivity study
+3. Kd sensitivity study
+4. Kp/Kd two-parameter sweep
+5. 20-trial reproducible Monte Carlo study
+6. Edge-case testing
+
+Week 10 robustness analysis completed.

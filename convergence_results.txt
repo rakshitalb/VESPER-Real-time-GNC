@@ -1,0 +1,11 @@
+﻿WEEK 8 - CONVERGENCE STUDY RESULTS
+Script: C:\Users\DELL\Week4_GNC_Renode\convergence_test.py
+Test step sizes: dt = 1, 0.5, 0.25, 0.125 s
+Final roll at dt=1 s: -0.00000052 deg
+Final roll at dt=0.5 s: -0.00000052 deg
+Final roll at dt=0.25 s: -0.00000052 deg
+Final roll at dt=0.125 s: -0.00000052 deg
+Final pitch/yaw: approximately 0 deg for all tested step sizes
+Maximum consecutive final-attitude difference: 0 deg at reported output precision
+Result: final attitude is numerically unchanged across the tested step sizes at the reported output precision.
+Qualification: this is a convergence check on the reported output; it does not by itself prove internal RK45 truncation convergence because solve_ivp uses adaptive integration with rtol=1e-6 and atol=1e-8.

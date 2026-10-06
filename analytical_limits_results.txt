@@ -1,0 +1,14 @@
+﻿ANALYTICAL LIMITS - VERIFICATION RECORD
+Source implementation: control.c, control.py, dynamics.py, magnetorquer.py
+PD gains: Kp = 0.008, Kd = 0.05
+Reaction-wheel per-axis torque limit: |tau| <= 0.010 N.m
+Reaction-wheel momentum limit: |h| <= 0.100 N.m.s per wheel
+Controller law: tau_raw = -Kp*q_err - Kd*omega
+Analytical per-axis bound before clipping: |tau_raw_i| <= Kp*|q_err_i| + Kd*|omega_i|
+Implemented actuator bound: tau_i = clip(tau_raw_i, -0.010, +0.010) N.m
+Cross-code test input: q_err = [0.5, -0.25, 0.1], omega = [0.2, -0.1, 0.05]
+Analytical raw torque: [-0.0140, +0.0070, -0.0033] N.m
+After +/-0.010 N.m saturation: [-0.0100, +0.0070, -0.0033] N.m
+Interpretation: X-axis reaches the actuator limit; Y and Z remain unsaturated.
+These analytical limits are independently consistent with the implemented C/Python clipping and the completed cross-code verification.
+Qualification: this is an analytical actuator/controller-limit check; it is not a formal proof of complete spacecraft stability or global closed-loop performance.

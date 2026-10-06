@@ -1,0 +1,12 @@
+﻿WEEK 9 - CROSS-CODE VERIFICATION
+Test ELF: gnc_week9_cross_code_test.elf
+Renode: 1.17.0
+Input q_err = [0.5, -0.25, 0.1]
+Input omega = [0.2, -0.1, 0.05]
+test_done = 0x0001
+C torque X raw = 0xFFFFD8F0 = -10000 micro-units = -0.010000 Nm
+C torque Y raw = 0x00001B58 = 7000 micro-units = +0.007000 Nm
+C torque Z raw = 0xFFFFF31C = -3300 micro-units = -0.003300 Nm
+Python/reference torque = [-0.010000, +0.007000, -0.003300] Nm
+Result: all three axes match exactly.
+Qualification: Renode ReadDouble is unsupported; integer micro-unit conversion was used for deterministic numerical comparison.

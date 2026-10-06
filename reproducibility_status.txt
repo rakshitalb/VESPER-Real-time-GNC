@@ -1,0 +1,9 @@
+REPRODUCIBILITY STATUS
+
+Clean reproduction script verified: c_port\week9_integration_repro.resc
+ELF loading: @./gnc_week9_integration.elf
+Absolute-path audit: no C:\Users\DELL paths found in the Python/C/H files searched.
+Legacy Renode scripts with machine-specific absolute ELF paths were identified: rtos.resc, rtos_gnc_timing.resc, timing.resc, week11_final_measurement.resc, week11_jitter.resc, week7_rtos_timing.resc, week7_timing.resc, week9_integration.resc.
+Original verified scripts are intentionally not modified.
+Qualification: Week 9 integration has a clean relative-path reproduction script; full project-wide clone-and-run reproducibility still requires clean reproduction scripts for the remaining measured artifacts.
+Status: PARTIAL / DOCUMENTED GAP

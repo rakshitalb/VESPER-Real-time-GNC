@@ -1,0 +1,18 @@
+﻿WEEK 9 - INTERFACE RUNTIME EVIDENCE
+Build: gnc_week9_integration.elf
+Repro script: week9_integration_repro.resc
+Renode: 1.17.0
+CPU: PerformanceInMips 125
+Interface: GNC_Telemetry in week9_interface.h
+Producer: GNC_Task calls pd_controller and publishes timestamp, status and torque fields
+Consumer: Communications_Task reads timestamp, status and torque fields
+Observed communications_last_timestamp: 0x0B46 = 2886
+Observed communications_last_status: 0x0001 = 1
+Later gnc_count: 0x17CF = 6095
+Observed gnc_telemetry.timestamp: 0x21A4 = 8612
+Later communications_last_timestamp: 0x29C8 = 10696
+Later communications_last_status: 0x0001 = 1
+Interpretation: repeated non-zero timestamps and valid status demonstrate producer-consumer runtime activity
+Reproducibility: original week9_integration.resc was not modified; repro script uses @./gnc_week9_integration.elf
+Limitation: torque double fields were not numerically read through Renode ReadWord, so no raw-memory torque value is claimed
+Qualification: Renode reported NVIC priority warnings, but the application reached the running state and produced the observations above
