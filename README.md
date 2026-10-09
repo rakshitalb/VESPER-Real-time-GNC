@@ -1,4 +1,4 @@
-# VESPER - Real-time GNC Loop Under Emulation
+# SAARTHI – Real-Time GNC Loop Under Emulation
 
 ## Project status
 Embedded real-time GNC implementation using Python reference control, C port, ARM Cortex-M4 build, FreeRTOS tasks, and Renode emulation.
